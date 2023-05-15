@@ -32,7 +32,7 @@ function adicinaLinha () { // funcao add linhas
         linha += `<td>${inputNotaAtividade.value}</td>`;
         linha += `<td>${inputNotaAtividade.value >= notaMinima ? imgAprovado : imgReprovado }</td>`; // Lembrar de ADD variaveis de EMOJI 
         linha += `</tr>`;
-        
+
         linhas += linha; 
     }
 
@@ -48,7 +48,7 @@ function atualizaTabela () {
 function atualizaMediaFinal() {
     const mediaFinal = calculaMediaFinal();
 
-    document.getElementById('media-final-valor').innerHTML = mediaFinal;
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2); // ToFixed para limitar as casas decimais 
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 }
 
