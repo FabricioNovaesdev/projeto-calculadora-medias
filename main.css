@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0; /* Espacamento */ 
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
+}
+
+body {  /* Teg do corpo */
+    background-color: #e7e7e7;
+    padding-top: 100px ;    /* Espaco da borda do topo */
+}   
+
+header {    /* Teg cabecalho */ 
+    display: flex;   /* Elementos um ao lado do outro */
+    align-items: center;    /* centralizar itens na vertical */ 
+    margin-bottom: 40px; /* separar do corpo */
+}
+
+header img { 
+    height: 36px;   /* Tamanho logo */
+    margin-right: 16px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;  /* font  negrito */
+}
+
+.container {    /* configurando container pra ocupar 100% de 960px */
+    max-width: 960px; /* Area maxima */ 
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex; /* Para alinhar os conteudos */
+    max-width:640px ;
+    width: 100%;
+    justify-content: space-between ; /* Para distribuir o espaco entre os itens */ 
+    margin-bottom: 56px; /* espaco de margem */
+}
+
+form input { /* Estilizando campos do formulario */
+    font-size: 24px;
+    background-color:#fff;
+    border: none;
+    border-bottom: 2px solid #000; /* Borda inferior */
+    padding: 8px;
+}
+
+form button {  /* Estilizanod botao do formulario */
+    background-color: #009432;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold; 
+    border: none; /*    sem borda no botao */ 
+    cursor: pointer; /*  mopuse , de bortao */
+    padding: 8px; /*    espacamento */
+}
+
+table {
+    width: 100%;
+
+}
+
+table th { /* estilizando tabela */ 
+    border-bottom: 2px solid #000;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td { /*   estilizando corpota da tabela */
+    text-align: center; /*  alinhando texto no centro */
+    font-size: 18px;
+    padding: 16px 0; /* add mais um numero soma para as laterais */
+    border-bottom: 1px solid rgba(0,0,0, 0.1); /* color RGBA pada dar transparencia 0.5 = 10% de cor */ 
+}
+
+table td img { 
+    height: 30px;
+}
+
+.resultado {
+    padding: 8px;
+    font-weight: bold;
+    color: #fff ; 
+    background-color: #000;
+    border-radius: 3px; /* aredondar */
+
+}
+
+.aprovado { /* Criando regra de aprovado */
+    background-color: #009432;
+
+}
+
+.reprovado { /*  Criando regra de reprovado */ 
+    background-color: red;
+    
+}
